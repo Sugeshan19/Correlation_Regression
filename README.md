@@ -24,8 +24,6 @@ If y represents the dependent variable and x the independent variable, this rela
 
 # Program :
 ```
-Developed by : Priyanka.A
-Register number : 212222230113
 import numpy as np
 import math
 import matplotlib.pyplot as plt
@@ -43,7 +41,7 @@ for i in range(0,N):
     Sxy=Sxy+x[i]*y[i]
     Sx2=Sx2+x[i]**2
     Sy2=Sy2+y[i]**2
-r=(N*Sxy-Sx*Sy)/(math.sqrt(N*Sx2-Sx**2)*math.sqrt(N*Sy2-Sy**2))
+r=(N*Sxy-Sx*Sy)/(math.sqrt(N*Sx2-Sx*2)*math.sqrt(N*Sy2-Sy*2))
 print("The Correlation coefficient is %0.3f"%r)
 byx=(N*Sxy-Sx*Sy)/(N*Sx2-Sx**2)
 xmean=Sx/N
@@ -58,12 +56,12 @@ plt.plot(x,y1,'r')
 plt.xlabel('x-data')
 plt.ylabel('y-data')
 plt.legend(['Regression Line','Data points'])
-
+plt.show()
 ```
 
 # Output 
 
-![280664550-79cf2734-4776-405b-ae0b-b645f23f97c4](https://github.com/user-attachments/assets/73587767-a946-444a-b04d-8df7bef535c1)
+![443940907-83d5163d-7c1d-4952-ba49-a4737356a928](https://github.com/user-attachments/assets/1ec2af82-7f07-4312-93af-339875204992)
 
 # Result
 The Correlation and regression for data analysis of objects from feeder using probability distribution are calculated.
